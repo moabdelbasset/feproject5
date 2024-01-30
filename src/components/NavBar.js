@@ -1,11 +1,11 @@
 import React from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/project5-logo.png'
-
+import styles from '../styles/NavBar.module.css'
 
 const NavBar = () => {
   return (
-<Navbar expand="md" fixed="top">
+<Navbar className={styles.NavBar} expand="md" fixed="top">
   <Container>
   <Navbar.Brand href="#home"><img src={logo} alt="logo" height="45" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -14,7 +14,6 @@ const NavBar = () => {
       <Nav.Link><i className="fas fa-home"></i>Home</Nav.Link>
       <Nav.Link><i className="fas fa-sign-in-alt"></i>Sign in</Nav.Link>
       <Nav.Link><i className="fas fa-user-plus"></i>Sign up</Nav.Link>
-
     </Nav>
 
   </Navbar.Collapse>
