@@ -1,0 +1,25 @@
+.Footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #dadadf;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+.Icons a {
+    margin: 0 10px;
+    color: #555555;
+    transition: color ease-in-out 0.3s;
+  }
+  
+.Icons a:hover {
+    color: #2142b2;
+  }
+  
+.fab {
+    font-size: 1.8rem;
+  }
+  
