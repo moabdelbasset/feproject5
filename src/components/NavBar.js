@@ -25,13 +25,13 @@ const NavBar = () => {
   };
 
   const addTaskIcon = (
-    <NavLink 
+  <NavLink 
     className={styles.NavLink} 
     activeClassName={styles.Active} 
     to="/tasks/create"
-    >
-      <i className="far fa-plus-square"></i>Add Task
-      </NavLink>
+  >
+    <i className="far fa-plus-square"></i>Add Task
+  </NavLink>
 
   )
   const loggedInIcons = <>
