@@ -3,11 +3,57 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/project5-logo.png';
 import styles from '../styles/NavBar.module.css';
 import { NavLink } from 'react-router-dom';
-import { useCurrentUser } from '../contexts/CurrentUserContext';
+import { useCurrentUser, useSetCurrentUser } from '../contexts/CurrentUserContext';
+import Avatar from './Avatar';
+import axios from 'axios';
 
 const NavBar = () => {
-  const currentUser = useCurrentUser()
-  const loggedInIcons = <>{currentUser?.username}</>
+  const currentUser = useCurrentUser();
+  const setCurrentUser = useSetCurrentUser();
+
+  const handleSignOut = async () => {
+    try {
+      await axios.post("dj-rest-auth/logout/");
+      setCurrentUser(null);
+    } catch(err) {
+      console.log(err);
+    }
+  };
+
+  const addTaskIcon = (
+    <NavLink 
+    className={styles.NavLink} 
+    activeClassName={styles.Active} 
+    to="/tasks/create"
+    >
+      <i className="far fa-plus-square"></i>Add Task
+      </NavLink>
+
+  )
+  const loggedInIcons = <>
+        <NavLink 
+    className={styles.NavLink} 
+    activeClassName={styles.Active} 
+    to="/tasks"
+    >
+      <i className="fas fa-stream"></i>Tasks
+      </NavLink>
+
+      <NavLink 
+      className={styles.NavLink} 
+      to="/"
+      onClick={handleSignOut}
+      >
+        <i className="fas fa-sign-out-alt"></i>Sign out
+        </NavLink>
+
+        <NavLink 
+      className={styles.NavLink} 
+      to={`/profiles/${currentUser?.profile_id}`}
+      >
+        <Avatar src={currentUser?.profile_image} text="profile" height={40} />
+        </NavLink>
+  </>
   const loggedOutIcons = (<>
         <NavLink 
       className={styles.NavLink} 
@@ -32,6 +78,7 @@ const NavBar = () => {
   <Navbar.Brand href="#home"><img src={logo} alt="logo" height="45" />
   </Navbar.Brand>
   </NavLink>
+  {currentUser && addTaskIcon}
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto text-left">
