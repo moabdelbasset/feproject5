@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { axiosReq } from '../../api/axiosDefaults';
-// ... import necessary components ...
+import { Button } from 'react-bootstrap';
 
 function TaskDetailPage() {
   const { id } = useParams();
@@ -26,9 +26,16 @@ function TaskDetailPage() {
   return (
     <div>
       <h1>{task.title}</h1>
+      <p>Description: {task.description}</p>
+      <p>Status: {task.status}</p>
+      <p>Priority: {task.priority}</p>
+      <p>Due Date: {task.due_date}</p>
       {/* Display more details of the task */}
+      <Link to={`/tasks/${id}/edit`}>
+        <Button variant="primary">Edit Task</Button>
+      </Link>
     </div>
   );
 }
-
+ 
 export default TaskDetailPage;
