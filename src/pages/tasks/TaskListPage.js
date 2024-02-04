@@ -26,9 +26,13 @@ function TaskListPage() {
         <Row className="h-100">
             <Col className="py-2 p-0 p-lg-2" lg={8}>
                 <Container className={appStyles.Content}>
-                    {tasks.map((task) => (
-                        <Task key={task.id} {...task} />
-                    ))}
+                    {tasks.length > 0 ? (
+                        tasks.map((task) => (
+                            <Task key={task.id} {...task} />
+                        ))
+                    ) : (
+                        <p>No tasks found.</p>
+                    )}
                 </Container>
             </Col>
         </Row>

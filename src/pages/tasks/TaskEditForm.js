@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -14,11 +14,11 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
-function formatDate(dateString) {
-  const date = new Date(dateString);
-  const options = { day: '2-digit', month: 'short', year: 'numeric' };
-  return date.toLocaleDateString('en-GB', options);
-}
+// function formatDate(dateString) {
+//   const date = new Date(dateString);
+//   const options = { day: '2-digit', month: 'short', year: 'numeric' };
+//   return date.toLocaleDateString('en-GB', options);
+// }
 
 
 function TaskEditForm() {
@@ -165,8 +165,9 @@ function TaskEditForm() {
       >
         <option value="">Select Status</option>
         <option value="pending">Pending</option>
-        <option value="in_progress">In Progress</option>
-        <option value="completed">Completed</option>
+        <option value="inprogress">In Progress</option>
+        <option value="done">Done</option>
+        <option value="not_done">Not Done</option>
       </Form.Control>
     </Form.Group>
     {errors?.status?.map((message, idx) => (
