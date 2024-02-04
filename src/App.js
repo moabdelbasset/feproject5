@@ -10,6 +10,7 @@ import TaskCreateForm from './pages/tasks/TaskCreateForm';
 import TaskListPage from './pages/tasks/TaskListPage';
 import TaskDetailPage from './pages/tasks/TaskDetailPage';
 import TaskEditForm from './pages/tasks/TaskEditForm';
+import HomePage from './pages/home/HomePage';
 
 
 
@@ -23,7 +24,7 @@ function App() {
           <NavBar />
           <Container className={styles.Main}>
             <Switch>
-              <Route exact path="/" render={()=> <h1>Home page</h1>} />
+              <Route exact path="/" render={()=> < HomePage/>} />
               <Route exact path="/signin" render={()=> <SignInForm />} />
               <Route exact path="/signup" render={()=> <SignUpForm />} />
               <Route exact path="/tasks/create" render={() => <TaskCreateForm />} />
