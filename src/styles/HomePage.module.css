@@ -1,0 +1,76 @@
+/* HomePage.module.css */
+
+/* General Styles */
+.homeContainer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Logged-In User Styles */
+.taskCard {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.taskTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.progressBar {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Logged-Out User Styles */
+.welcomeMessage {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.welcomeText {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.signInSignUpLinks a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.signInSignUpLinks a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .homeContainer {
+        margin-top: 20px;
+    }
+
+    .taskCard {
+        padding: 10px;
+    }
+
+    .taskTitle {
+        font-size: 1.3rem;
+    }
+
+    .welcomeMessage {
+        font-size: 1.8rem;
+    }
+
+    .welcomeText {
+        font-size: 1.1rem;
+    }
+}
