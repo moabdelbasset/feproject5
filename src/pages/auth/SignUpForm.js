@@ -5,6 +5,8 @@ import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import signUpImage from '../../assets/project5-signup.png';
+import { toast } from 'react-toastify';
+
 
 import {
   Form,
@@ -41,8 +43,10 @@ const SignUpForm = () => {
     try {
       await axios.post("/dj-rest-auth/registration/", signUpData);
       history.push("/signin");
+      toast.success("Signup Completed successfully! Try login with your user");
     } catch (err) {
       setErrors(err.response?.data);
+      toast.error("Signup Failed");
     }
   };
 
