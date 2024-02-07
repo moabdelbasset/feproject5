@@ -12,6 +12,8 @@ import styles from "../../styles/TaskCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { axiosReq } from "../../api/axiosDefaults";
+import { toast } from 'react-toastify';
+
 
 function TaskCreateForm() {
     const [errors, setErrors] = useState({});
@@ -53,6 +55,7 @@ function TaskCreateForm() {
 
         try {
             const { data } = await axiosReq.post("/tasks/", formData);
+            toast.success("Task added successfully!");
             history.push(`/tasks/${data.id}`);
         } catch (err) {
             console.log(err);

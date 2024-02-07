@@ -12,6 +12,8 @@ import TaskDetailPage from './pages/tasks/TaskDetailPage';
 import TaskEditForm from './pages/tasks/TaskEditForm';
 import HomePage from './pages/home/HomePage';
 import ContactForm from './pages/contact/ContactForm';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -23,9 +25,11 @@ function App() {
   return (
 
         <div className={styles.App}>
+           <ToastContainer />
           <NavBar />
           <Container className={styles.Main}>
             <Switch>
+             
               <Route exact path="/" render={()=> < HomePage/>} />
               <Route exact path="/signin" render={()=> <SignInForm />} />
               <Route exact path="/signup" render={()=> <SignUpForm />} />
