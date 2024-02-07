@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Button, Form } from 'react-bootstrap'; // If you're using React Bootstrap
+import { Button, Form, Alert } from 'react-bootstrap';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -10,30 +10,46 @@ const ContactForm = () => {
         message: '',
     });
 
+    const [formValidation, setFormValidation] = useState({
+        isValid: true,
+        message: '',
+    });
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+            setFormValidation({
+                isValid: false,
+                message: 'Please fill out all fields before submitting.',
+            });
+            return; 
+        }
+
         try {
             await axios.post('/contacts/create/', formData);
             alert('Message sent successfully!');
-            // Optionally clear the form after submission
             setFormData({
                 name: '',
                 email: '',
                 subject: '',
                 message: '',
             });
+            setFormValidation({
+                isValid: true,
+                message: '',
+            });
         } catch (error) {
             console.error('Failed to send message', error);
-            // Handle error
         }
     };
 
     return (
         <Form onSubmit={handleSubmit}>
+            {!formValidation.isValid && <Alert variant="danger">{formValidation.message}</Alert>}
             <Form.Group controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control 

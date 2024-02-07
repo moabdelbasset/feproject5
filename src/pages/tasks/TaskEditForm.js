@@ -13,6 +13,8 @@ import btnStyles from "../../styles/Button.module.css";
 
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import { toast } from 'react-toastify';
+
 
 // function formatDate(dateString) {
 //   const date = new Date(dateString);
@@ -78,9 +80,11 @@ function TaskEditForm() {
 
     try {
       await axiosReq.put(`/tasks/${id}/`, formData);
+      toast.success("Task updated successfully!");
       history.push(`/tasks/${id}`);
     } catch (err) {
       console.log(err);
+      toast.error("Failed to perform action.");
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }

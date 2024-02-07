@@ -59,6 +59,7 @@ function TaskCreateForm() {
             history.push(`/tasks/${data.id}`);
         } catch (err) {
             console.log(err);
+            toast.error("Failed to perform action.");
             if (err.response?.status !== 401) {
                 setErrors(err.response?.data);
             }
