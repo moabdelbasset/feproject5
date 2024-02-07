@@ -17,16 +17,27 @@ const isDueSoon = (dueDate) => {
     return dayDifference <= 3 && dayDifference >= 0;
 };
 
+
+const getGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour < 12) return "Good Morning";
+    if (hour < 18) return "Good Afternoon";
+    return "Good Evening";
+};
+
 const HomePage = () => {
     const currentUser = useCurrentUser();
     const [tasks, setTasks] = useState([]);
+    const [taskStats, setTaskStats] = useState({ total: 0, completed: 0, pending: 0, inProgress: 0 });
 
     useEffect(() => {
         if (currentUser) {
             const fetchTasks = async () => {
                 try {
                     const response = await axios.get('/tasks'); 
-                    setTasks(response.data.results);
+                    const fetchedTasks = response.data.results;
+                    setTasks(fetchedTasks);
+                    calculateStats(fetchedTasks);
                 } catch (error) {
                     console.error('Error fetching tasks', error);
                 }
@@ -35,14 +46,34 @@ const HomePage = () => {
         }
     }, [currentUser]);
 
+    const calculateStats = (fetchedTasks) => {
+        const stats = { total: 0, completed: 0, pending: 0, inProgress: 0 };
+        fetchedTasks.forEach(task => {
+            stats.total++;
+            if (task.status === 'completed') stats.completed++;
+            else if (task.status === 'pending') stats.pending++;
+            else if (task.status === 'inProgress') stats.inProgress++;
+        });
+        setTaskStats(stats);
+    };
+
+
     return (
         <div className={styles.homeContainer}>
             {currentUser ? (
                 <>
+                    <h1>{getGreeting()}, {currentUser.username}!</h1>
                     <h1>Task Progress</h1>
+                    <div className={styles.taskStats}>
+                        <p>Total Tasks: {taskStats.total}</p>
+                        <p>Completed: {taskStats.completed}</p>
+                        <p>Pending: {taskStats.pending}</p>
+                        <p>In Progress: {taskStats.inProgress}</p>
+                    </div>
                     {tasks.map(task => (
                         <div key={task.id} className={styles.taskCard}>
                             <h2 className={styles.taskTitle}>{task.title}</h2>
+                            <p className={styles.taskTitle}>{task.due_date}</p>
                             {isPastDue(task.due_date) && task.status !== 'completed' && (
                                 <div className="alert alert-danger">
                                     This task is past due!

@@ -11,6 +11,8 @@ import TaskListPage from './pages/tasks/TaskListPage';
 import TaskDetailPage from './pages/tasks/TaskDetailPage';
 import TaskEditForm from './pages/tasks/TaskEditForm';
 import HomePage from './pages/home/HomePage';
+import ContactForm from './pages/contact/ContactForm';
+
 
 
 
@@ -31,6 +33,7 @@ function App() {
               <Route exact path="/tasks" render={() => <TaskListPage />} />
               <Route exact path="/tasks/:id" render={() => <TaskDetailPage />} /> 
               <Route exact path="/tasks/:id/edit" render={() => <TaskEditForm />} />
+              <Route exact path="/contact" render={() => <ContactForm />} />
               <Route render={()=><p>Page not found!</p>} />
             </Switch>
           </Container>

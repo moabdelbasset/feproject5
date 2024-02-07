@@ -7,6 +7,26 @@
     margin-top: 30px;
 }
 
+.homeContainer {
+    /* ... existing styles ... */
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskList {
+    /* Styles for the task list section */
+    flex-grow: 1; /* Adjust as needed */
+}
+
+.taskStats {
+    /* Styles for the task stats section */
+    flex-basis: 20%; /* Adjust width as needed */
+    /* Additional styling for the stats section */
+}
+
 /* Logged-In User Styles */
 .taskCard {
     background-color: #f9f9f9;
