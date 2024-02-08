@@ -14,7 +14,8 @@ import HomePage from './pages/home/HomePage';
 import ContactForm from './pages/contact/ContactForm';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Profile from './pages/profile/Profile';
+import ProfileEditForm from './pages/profile/ProfileEditForm';
 
 
 
@@ -38,6 +39,8 @@ function App() {
               <Route exact path="/tasks/:id" render={() => <TaskDetailPage />} /> 
               <Route exact path="/tasks/:id/edit" render={() => <TaskEditForm />} />
               <Route exact path="/contact" render={() => <ContactForm />} />
+              <Route exact path="/profile/:id" component={Profile} />
+              <Route exact path="/profile/:id/edit" component={ProfileEditForm} />
               <Route render={()=><p>Page not found!</p>} />
             </Switch>
           </Container>
