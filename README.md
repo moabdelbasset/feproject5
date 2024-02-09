@@ -16,10 +16,8 @@ For details on back-end please visit this link: [BACK-END REPO](https://github.c
   - [Agile Planning](#agile-planning)
   - [Epics](#epics)
     - [User Stories](#user-stories)
-  - [The Structure Plane](#the-structure-plane)
-    - [Features](#features)
-    - [Reusable components](#reusable-components)
-    - [Features Left To Implement](#features-left-to-implement)
+  - [Features](#features)
+  - [Features Left To Implement](#features-left-to-implement)
   - [The Skeleton Plane](#the-skeleton-plane)
     - [Wireframes](#wireframes)
   - [The Surface Plane](#the-surface-plane)
@@ -136,3 +134,21 @@ Each EPIC contains user stories allowing me to build up the project with small f
 - EPIC 7-Documentation and deployment:
   - `As a DEVELOPER I need to CREATE README FILE so that I CAN DOCUMENT THE PROCESS OF CREATING THE APPLICATION`
   - `As a DEVELOPER I need to deploy both projects and link them together so that USERS CAN USE FULL STACK WEBSITE`
+
+
+## Features
+
+**Navbar**
+
+**Footer**
+
+**HomePage**
+
+**TasksPage**
+
+**ContactPage**
+
+## Features left to implement
+- Calendar integration
+- Kaban Board
+- Team Collaboration
