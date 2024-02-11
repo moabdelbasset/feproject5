@@ -17,10 +17,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Profile from './pages/profile/Profile';
 import ProfileEditForm from './pages/profile/ProfileEditForm';
 
-
-
-
-
 function App() {
 
   return (
@@ -29,8 +25,7 @@ function App() {
            <ToastContainer />
           <NavBar />
           <Container className={styles.Main}>
-            <Switch>
-             
+            <Switch>            
               <Route exact path="/" render={()=> < HomePage/>} />
               <Route exact path="/signin" render={()=> <SignInForm />} />
               <Route exact path="/signup" render={()=> <SignUpForm />} />

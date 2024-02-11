@@ -138,7 +138,16 @@ Each EPIC contains user stories allowing me to build up the project with small f
 
 ## Features
 
+**Favicon**
+`As a DEVELOPER I need to ADD FAVICON TO THE PAGE so that USERS CAN EASILY FIND IT IF HAVING MULTIPLE TABS OPEN`
+![favicon_image](https://asset.cloudinary.com/dxiyxikz7/c9284f53dbc4a17dd4715001c4fa97f9)
+
+- Favicon icon displayed within a tab.
+- The aim of the feature is for user to easily find the tab if for example having a lot of sites open at the same time
+
+
 **Navbar**
+
 
 **Footer**
 
