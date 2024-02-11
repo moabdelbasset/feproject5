@@ -140,13 +140,17 @@ Each EPIC contains user stories allowing me to build up the project with small f
 
 **Favicon**
 `As a DEVELOPER I need to ADD FAVICON TO THE PAGE so that USERS CAN EASILY FIND IT IF HAVING MULTIPLE TABS OPEN`
-![favicon_image](https://asset.cloudinary.com/dxiyxikz7/c9284f53dbc4a17dd4715001c4fa97f9)
+![favicon_image](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707668927/media/images/3b8fa5f0-228e-47b2-a95a-85c49388f564.png)
 
 - Favicon icon displayed within a tab.
 - The aim of the feature is for user to easily find the tab if for example having a lot of sites open at the same time
 
 
 **Navbar**
+`As a USER I can SEE NAV BAR IN THE SAME PLACE so that I CAN NAVIGATE THE PAGE EASILY`
+`As a user I can see different authentication options within nav bar depending on my log in status so that I'm not confused with my current log in status`
+`As a USER I can SEE MY LOGGED IN STATUS so that I KNOW I NEED TO LOG IN OR LOG OUT AS NEEDED`
+
 
 
 **Footer**
@@ -161,3 +165,213 @@ Each EPIC contains user stories allowing me to build up the project with small f
 - Calendar integration
 - Kaban Board
 - Team Collaboration
+
+## Tools and Technologies
+
+- Node - package manager used to install dependencies
+- React - framework used for UI
+- Bootstrap React - CSS framework used for responsive design
+- Visual Studio Code - used to develop the website
+- Github - used to host source code and deploy on Github Pages
+- Git- used to commit and push code
+- HTML - used for static content sporadically
+- CSS- used for website styling
+- JavaScript- main language used to make page interactive
+- Heroku - to deploy the app
+- [toastify](https://www.npmjs.com/package/react-toastify?activeTab=versions) used to create toast messages
+- [Wireframe.cc](https://wireframe.cc/)- used to create wireframes
+- [Favicon](https://favicon.io/favicon-generator/) - used to create favicon for the page
+- [Font Awesome](https://fontawesome.com/) - used to add icons for the page
+- [Wave Evaluation Tool](https://wave.webaim.org/)- used for checking accessibility
+- [Techsini](https://techsini.com/multi-mockup/index.php)- used for creating mockup image
+- [W3C Validator](https://validator.w3.org/)- used for checking HTML and CSS for errors
+- ESLINT - tool installed and used to check java script code meets standards and has no errors
+- [Table Markdown](https://tabletomarkdown.com/)- to create tables in readme
+- Lighthouse - used to check performance of the page
+
+
+## Testing
+
+### Responsiveness
+
+Website has been checked for responsiveness through Development tools. In order to do this, the following steps have been taken:
+
+1. Open browser
+2. Navigate to Snap.it.up at https://snap-it-up-frontend-0a24e912efd8.herokuapp.com/
+3. Right click anywhere on the page and go to "Inspect" to open Development Tools
+4. Click on drop down menu: "Dimensions: Responsive" and choose "Responsive"
+5. Drag the side of the screen and change screen size, make sure the website looks good from 320px and up. Make sure no side
+   scroll bar is showing.
+
+- Expected- page is user friendly when viewing the website on small and large screens.
+- Actual- website looks good, no bottom scroll bar showing, all content clearly visible. Website is user friendly on all screen sizes.
+
+- The following devices have been used to check responsiveness:
+
+  - Iphone 13 Pro
+  - Google Pixel 7 Pro
+  - Asus Vivobook
+
+- The following browsers have been used to check responsiveness:
+  - Chrome
+  - Microsoft Edge
+  - Firefox
+
+Unable to use the app on Iphone, it registers the account as shown in admin panel however it won't allow to sign in, I have found that everyone submitting the project has the same issue and this can not be fixed. [Sean explains it here](https://code-institute-room.slack.com/archives/C02MTH5MBDG/p1659719243446449?thread_ts=1659705919.570999&cid=C02MTH5MBDG)
+
+### Accessibility
+
+Each page checked with the help of [WAVE Accessibility tool](https://wave.webaim.org/). Each page passes accesibility test with no error for:
+
+- contrast
+- aria- labels for users who use screen-readers
+- alternative text as a function for screen readers or in events when images don't load
+- structural elements - for users of assistive technology as well as visual and semantic meaning
+- language of the document- for screen readers
+
+- alerts coming up 'Reduntant link-Adjacent links go to the same URL', however as it doesn't come up as an error, I have left it in. This is due to the instructional icon to click to detail view if user want's to ask a question/ make an offer/also two links to home page from 'home' link and logo.
+
+### Lighthouse
+
+- HOME PAGE (desktop & mobile)
+
+![lighthouse_desktop](https://res.cloudinary.com/dmod5eglu/image/upload/v1706243998/lighthouse_desktop_home_cessny.png)
+
+![lighthouse_mobile](https://res.cloudinary.com/dmod5eglu/image/upload/v1706243996/lighthouse_mobile_home_weckz4.png)
+
+- ADVERTS DETAIL VIEW (desktop & mobile)
+
+![lighthouse_desktop_advert_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706244005/LIGHTHOUSE_DESKTOP_ADVERT_i0biam.png)
+
+![lighthouse_mobile_advert_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706243994/LIGHTHOUSE_MOBILE_ADVERT_hlq14r.png)
+
+- PROFILE PAGE (desktop & mobile)
+
+![lighthouse_desktop_profile_page_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706244003/LIGHTHOUSE_DESKTOP_PROFILE_pqpvbg.png)
+
+![lighthouse_mobile_profile_page_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706244000/LIGHTHOUSE_mobile_PROFILE_ajrxvl.png)
+
+The performance is lower due to the fact that the page is heavy on images, fixes can be applied in the future as time won't allow me for it now.
+
+### Validator Testing
+
+#### HTML
+
+Only index.js page has HTML code and this comes up clear of errors in [W3C VALIDATOR](https://validator.w3.org/).
+
+In order to check HTML code in dynamic website:
+
+- go to the live page
+- click right and select 'Inspect' then click right and select 'View page source'
+- code will open in new tab - copy the code
+- paste the code in the validator as 'direct input'
+
+#### CSS
+
+No errors were found when passing all CSS files through the official Jigsaw W3 Validator
+
+![css_validator_check](https://res.cloudinary.com/dmod5eglu/image/upload/v1706245588/CSS_VALIDATION_q19x4k.png)
+
+### JavaScript
+
+Each file has been opened in a workspace to check it with ESLINT however I am getting a warning:
+
+![eslint_warning](https://res.cloudinary.com/dmod5eglu/image/upload/v1706246313/eslint_warning_nuxuyh.png)
+
+I was unable to fix it, I tried multiple ways, used createRoot, installed different React version but it seemed to have caused more issues. As it is not an error but a warning I have left it in for now.
+
+All other files show:
+
+![eslint_no_problems](https://res.cloudinary.com/dmod5eglu/image/upload/v1706246311/eslint_no_problems_ubtukt.png)
+
+### Manual Testing
+
+#### Functional Testing
+
+## Deployment
+
+### Version Control
+
+- Git
+  Code has been pushed with git commands to remote repository on Github with commands:
+
+  ` git add .` - to add files ready to commit
+
+  `git commit -m "message"` - to commit the code to local
+  repository ready to be pushed
+
+  `git push` - final command used to push commited code to remote repo on Github
+
+### Deploying in Heroku
+
+- The project has been deployed on Heroku as follows:
+
+  - Use: `pip freeze > requirements.txt` to add external libraries to deployed app.
+  - Create Heroku account ( step by step guide [here](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql))
+  - In the top right, click 'New'
+  - Click 'Create new app'
+  - Give your app a name and select your region from drop down
+  - Click 'Create new app'
+  - Scroll down to 'Buildpacks' section
+  - Click 'Add buildpack'
+  - Add Python as first dependency and select 'Save changes'
+  - Add node.js as a second dependency and save again
+    (This is settings section done)
+  - Select 'Deploy' tab at the top
+  - Select ' Github' from 'Deployment method'
+  - type the name of how you called project in Github and click 'search'
+  - Scroll down and select manual deployment method
+  - Auto method has also been selected to allow the project to update every time i push the code from Gitpod
+  - You can now click to view the app ready and running
+
+- Once you have the deployment of front end-done you can connect it to API:
+
+  - Go to your drf api in Heroku
+  - Add Config Vars within settings section:
+    - 'CLIENT_ORIGIN_DEV' as key with a value of: link to your local host (front-end) no quote marks no forward slash at the end.
+    - 'CLIENT_ORIGIN' as key and value of: URL to your deployed front end repo from heroku
+    - in front end workspace install `npm install axios`
+    - create a folder 'API' --> AND FILE : 'axiosDefaults'.
+    - at the top of the file import axios at the top of the file
+    - define your baseURL which is the URL of your deployed API project
+    - set content-type header to multi-part/form-data as the API will need to deal with images as well as text in it's requests.
+    - to avoid any CORS issues, set withCredentials to True.
+    - import this file into App.js to be used across all pages
+
+### CLONING THE REPOSITORY
+
+1. On Github navigate to repository
+2. Click "Code" a green button shown right above the file list
+3. Copy the URL of the repo using HTTPS, SSH OR Github CLI
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory
+6. Type git clone, and then paste the URL you copied earlier
+7. Press enter to create local Clone
+
+For more details on how to clone the remote repo in order to create a local copy for own use, please click [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+### FORKING
+
+1. On Github navigate to repository
+2. click "Fork" located towards the top right corner
+3. Select "owner" for the forked repo, from the dropdown menu under "owner" Under "Owner"
+4. It will create forked repo under the same name as orinial by default but you can type a name in "Repository name" or add a description in "Description" box.
+5. Click "Create fork" !
+
+Forking allows you to make any changes without affecting original project. You can send the suggestions over by submitting pull request. Project owner can review the pull request before accepting the suggestions and merging them.
+
+For more details on how to fork the repo, in order to for example suggest any changes to the project you can click [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
+When you have fork to a repository you don't have access to files locally on your device, for this you will need to clone the forked repo.
+
+## Credits
+
+- Code institues learning material for advanced front end which I have used as a base of this project
+- [STAR RATING](https://dev.to/kartikbudhraja/creating-a-dynamic-star-rating-system-in-react-2c8)
+- Logo created with [rawpixel](https://www.rawpixel.com/) and [canva](https://www.canva.com/)
+- all images from [pexels](https://www.pexels.com/)
+- [Tom Alumnus](https://code-institute-room.slack.com/team/U02DP5GEYKE) from Slack, for creating ESLINT file with configs.
+
+## Acknowledgements
+
+My mentor [Daisy Mc Girr](https://github.com/Daisy-McG) for helping me fix the app when it completely crashed due to incorrect react version installed and all the help throughout the process.
