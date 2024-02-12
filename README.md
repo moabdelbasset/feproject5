@@ -113,6 +113,7 @@ Each EPIC contains user stories allowing me to build up the project with small f
   - `As a user I can see different authentication options within nav bar depending on my log in status so that I'm not confused with my current log in status`
   - `As a user I can navigate through pages seamlessly so that I don't have to wait for page to refresh every time`
   - `As a User I want to be able to get in touch with the Developer so that I can enquire about issues/suggestions I may have`
+  - `As a Developer I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist`
 
 - EPIC 3-Task Management:
   - `As a user, I want to create tasks so that I can track my work or personal projects.`
@@ -202,6 +203,15 @@ Users that have registered and logged in will be met with a similar layout but t
 `As a user, I want to contact support if I encounter problems so that I can resolve issues and continue using the application effectively.`
 ![ContactPage](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707729931/media/images/b7320af7-27c7-4679-8f81-b5aca1fcdb6d.png)
 
+**Error Pages**
+
+404 Page
+
+`As a Developer I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist`
+
+A 404 page has been implemented and will display if a user navigates to a broken link.
+
+![404](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707730649/media/images/5bd0c176-272a-4b23-9bb0-08a88fb327fa.png)
 
 ## Features left to implement
 - Calendar integration
@@ -272,28 +282,6 @@ Each page checked with the help of [WAVE Accessibility tool](https://wave.webaim
 - language of the document- for screen readers
 
 - alerts coming up 'Reduntant link-Adjacent links go to the same URL', however as it doesn't come up as an error, I have left it in. This is due to the instructional icon to click to detail view if user want's to ask a question/ make an offer/also two links to home page from 'home' link and logo.
-
-### Lighthouse
-
-- HOME PAGE (desktop & mobile)
-
-![lighthouse_desktop](https://res.cloudinary.com/dmod5eglu/image/upload/v1706243998/lighthouse_desktop_home_cessny.png)
-
-![lighthouse_mobile](https://res.cloudinary.com/dmod5eglu/image/upload/v1706243996/lighthouse_mobile_home_weckz4.png)
-
-- ADVERTS DETAIL VIEW (desktop & mobile)
-
-![lighthouse_desktop_advert_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706244005/LIGHTHOUSE_DESKTOP_ADVERT_i0biam.png)
-
-![lighthouse_mobile_advert_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706243994/LIGHTHOUSE_MOBILE_ADVERT_hlq14r.png)
-
-- PROFILE PAGE (desktop & mobile)
-
-![lighthouse_desktop_profile_page_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706244003/LIGHTHOUSE_DESKTOP_PROFILE_pqpvbg.png)
-
-![lighthouse_mobile_profile_page_view](https://res.cloudinary.com/dmod5eglu/image/upload/v1706244000/LIGHTHOUSE_mobile_PROFILE_ajrxvl.png)
-
-The performance is lower due to the fact that the page is heavy on images, fixes can be applied in the future as time won't allow me for it now.
 
 ### Validator Testing
 
