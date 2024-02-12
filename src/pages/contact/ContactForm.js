@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Button, Form, Alert } from 'react-bootstrap';
+import btnStyles from "../../styles/Button.module.css";
+
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -91,7 +93,7 @@ const ContactForm = () => {
                     onChange={handleChange} />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} variant="primary" type="submit">
                 Submit
             </Button>
         </Form>

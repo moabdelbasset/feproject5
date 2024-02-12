@@ -14,6 +14,7 @@ For details on back-end please visit this link: [BACK-END REPO](https://github.c
   - [Ideal User](#the-ideal-user)
   - [Site Goals](#site-goals)
   - [Agile Planning](#agile-planning)
+  - [Reusable components](#reusable-components)
   - [Epics](#epics)
     - [User Stories](#user-stories)
   - [Features](#features)
@@ -77,6 +78,14 @@ This project was developed using agile methodologies by delivering small feature
 
 The Kanban board was created using Github projects and can be located [here](https://github.com/users/moabdelbasset/projects/3/views/1) and can be viewed to see more information on the project cards. All stories have a full set of acceptance criteria to define the functionality that marks that story as complete.
 
+## Reusable components
+
+Reusable components have been made to recycle the code and avoid duplicating it when unnecessary.
+
+- Navbar: Reused throughout the entire page to provide consistent design allowing users to become familiar with navigating the pages and making it an easy and enjoyable experience.
+- Assets: This component was used throughout the page to show page was loading or no results has been found.
+- UserContext: The component was used througout the page to determine the user context
+- ProgressBar: This component can be used in different pages to give the user a UI experince on how he progressed in his task
 
 ## Epics
 
@@ -269,7 +278,6 @@ Website has been checked for responsiveness through Development tools. In order 
   - Microsoft Edge
   - Firefox
 
-Unable to use the app on Iphone, it registers the account as shown in admin panel however it won't allow to sign in, I have found that everyone submitting the project has the same issue and this can not be fixed. [Sean explains it here](https://code-institute-room.slack.com/archives/C02MTH5MBDG/p1659719243446449?thread_ts=1659705919.570999&cid=C02MTH5MBDG)
 
 ### Accessibility
 
