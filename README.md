@@ -112,6 +112,7 @@ Each EPIC contains user stories allowing me to build up the project with small f
   - `As a USER I can SEE NAV BAR IN THE SAME PLACE so that I CAN NAVIGATE THE PAGE EASILY`
   - `As a user I can see different authentication options within nav bar depending on my log in status so that I'm not confused with my current log in status`
   - `As a user I can navigate through pages seamlessly so that I don't have to wait for page to refresh every time`
+  - `As a User I want to be able to get in touch with the Developer so that I can enquire about issues/suggestions I may have`
 
 - EPIC 3-Task Management:
   - `As a user, I want to create tasks so that I can track my work or personal projects.`
@@ -150,16 +151,57 @@ Each EPIC contains user stories allowing me to build up the project with small f
 `As a USER I can SEE NAV BAR IN THE SAME PLACE so that I CAN NAVIGATE THE PAGE EASILY`
 `As a user I can see different authentication options within nav bar depending on my log in status so that I'm not confused with my current log in status`
 `As a USER I can SEE MY LOGGED IN STATUS so that I KNOW I NEED TO LOG IN OR LOG OUT AS NEEDED`
+`As a user, I want a responsive design so that I can use TaskWave on any device, including smartphones, tablets, and desktop computers.`
 
+
+The following navigation items are available on all pages:
+
+Home - Visible to all but for logged in users it will give a summary of task progress
+Signin - Visible to logged out users
+Signup - Visible to logged out users
+Tasks - Visible to logged in users
+Profile -> profile.html - Visible to logged in users
+Add Tasks - Visible to logged in users
+
+The navigation menu is displayed on all pages and drops down into a hamburger menu on smaller devices. This will allow users to view the site from any device and not take up too much space on mobile devices. It is easily noticeable, intuitive, and easy to use.
+
+![Navbar_logged_out](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707726494/media/images/4f2ad7b2-11fc-421c-882b-c315aff4a524.png)
+![Navbar_logged_in](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707726556/media/images/85bf48b5-6488-483c-9a7b-16767d5f0ee9.png)
+![Navbar_responsive](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707726597/media/images/6e1ac19f-2def-4d0d-8164-af876e05af68.png)
 
 
 **Footer**
+`As a User I want to be able to get in touch with the Developer so that I can enquire about issues/suggestions I may have`
+
+The footer is placed at the bottom of the page. The social media links are displayed with icons provided by Font Awesome. This is where the user can click on a social media link and reach out to the developer for news and updates. A link to the developer's Github repository is provided and displayed using the Font Awesome Github icon. These icons have aria labels added to ensure users with assistive screen reading technology know the purpose of the links. They also open new tabs as they lead users away from the site.
+
+![footer](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707727403/media/images/190f3a50-d4e0-41e3-83d5-888e4e9e900a.png)
 
 **HomePage**
 
+There are two variations of the Home page that change based on User login/registration. Users that have not signed up will be met with a welcome message and some information about the site. Details of features available to registered Users are shown and a Sign-Up button is provided.
+
+Users that have registered and logged in will be met with a similar layout but this time there will be buttons linking the user to various functions but they will land on a user dashboard that will display the user task progress
+
+![Homepage1](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707728355/media/images/f84ae0ae-e984-4222-8b77-fc7d4429b617.png)
+![Homepage2](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707728332/media/images/44e39b40-84d2-482e-9bf2-f66aa1317ffc.png)
+
 **TasksPage**
+  - `As a user, I want to create tasks so that I can track my work or personal projects.`
+  - `As a user, I want to categorize tasks into different priorities and statuses so that I can focus on what is most important.`
+  - `As a user, I want to set due dates for my tasks so that I can manage my time effectively.`
+  - `As a user, I want to edit or delete tasks so that I can keep my task list up to date.`
+
+  ![TaskPage](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707729523/media/images/94cf65e7-bacf-4470-a614-eb08e704ff55.png)
+  ![AddTaskPage](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707729630/media/images/31b0b63a-a93a-42d7-9a82-d5f86468c7be.png)
+  ![TaskDetail](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707729630/media/images/31b0b63a-a93a-42d7-9a82-d5f86468c7be.png)
+  ![EditTaskPage](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707729730/media/images/de2bb89d-b626-47af-bcba-1d848791b094.png)
 
 **ContactPage**
+`As a user, I want to submit feedback about TaskWave so that I can suggest improvements or report issues.`
+`As a user, I want to contact support if I encounter problems so that I can resolve issues and continue using the application effectively.`
+![ContactPage](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707729931/media/images/b7320af7-27c7-4679-8f81-b5aca1fcdb6d.png)
+
 
 ## Features left to implement
 - Calendar integration
