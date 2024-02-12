@@ -3,6 +3,7 @@ import { useParams, Link, useHistory } from 'react-router-dom';
 import { axiosReq } from '../../api/axiosDefaults';
 import { Button, Alert } from 'react-bootstrap';
 import { toast } from 'react-toastify';
+import btnStyles from "../../styles/Button.module.css";
 
 
 function TaskDetailPage() {
@@ -61,7 +62,7 @@ function TaskDetailPage() {
       <Link to={`/tasks/${id}/edit`}>
         <Button variant="primary">Edit Task</Button>
       </Link>
-      <Button variant="danger" onClick={handleDelete} className="ml-2">
+      <Button variant="danger" onClick={handleDelete} className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}>
         Delete Task
       </Button>
     </div>
