@@ -16,6 +16,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Profile from './pages/profile/Profile';
 import ProfileEditForm from './pages/profile/ProfileEditForm';
+import NotFound from "./components/NotFound";
+
 
 function App() {
 
@@ -36,7 +38,8 @@ function App() {
               <Route exact path="/contact" render={() => <ContactForm />} />
               <Route exact path="/profile/:id" component={Profile} />
               <Route exact path="/profile/:id/edit" component={ProfileEditForm} />
-              <Route render={()=><p>Page not found!</p>} />
+              {/* <Route render={()=><p>Page not found!</p>} /> */}
+              <Route render={() => <NotFound />} />
             </Switch>
           </Container>
           <Footer />
