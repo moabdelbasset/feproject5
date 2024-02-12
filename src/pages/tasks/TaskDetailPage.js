@@ -60,7 +60,7 @@ function TaskDetailPage() {
       <p>Due Date: {task.due_date}</p>
       {/* Display more details of the task */}
       <Link to={`/tasks/${id}/edit`}>
-        <Button {`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} variant="primary" >Edit Task</Button>
+        <Button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} variant="primary" >Edit Task</Button>
       </Link>
       <Button variant="danger" onClick={handleDelete} className="ml-2">
         Delete Task
