@@ -46,10 +46,10 @@ function TaskEditForm() {
         const { title, description, priority, due_date, status, is_owner } = data;
 
         is_owner ? setTaskData({ title, description, priority, due_date, status}) : history.push("/");
-        console.log(data);
+        // console.log(data);
         
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 
@@ -75,7 +75,7 @@ function TaskEditForm() {
     formData.append("priority", taskData.priority);
     formData.append("status", taskData.status);
     
-    console.log("Submitting:", Object.fromEntries(formData));
+    // console.log("Submitting:", Object.fromEntries(formData));
 
 
     try {
@@ -83,7 +83,7 @@ function TaskEditForm() {
       toast.success("Task updated successfully!");
       history.push(`/tasks/${id}`);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       toast.error("Failed to perform action.");
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);

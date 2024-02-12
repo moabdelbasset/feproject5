@@ -23,7 +23,7 @@ const NavBar = () => {
       setCurrentUser(null);
       toast.success("User logged out.");
     } catch(err) {
-      console.log(err);
+      // console.log(err);
     }
   };
 

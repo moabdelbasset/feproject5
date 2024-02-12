@@ -4,18 +4,17 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import appStyles from "../../App.module.css";
 import { axiosReq } from "../../api/axiosDefaults";
-import Task from "./Task"; // Make sure this path is correct
+import Task from "./Task"; 
 
 function TaskListPage() {
-    const [tasks, setTasks] = useState([]); // Changed to 'tasks' and initialized as an array
-
+    const [tasks, setTasks] = useState([]); 
     useEffect(() => {
         const fetchTasks = async () => {
             try {
                 const { data } = await axiosReq.get("/tasks/");
-                setTasks(data.results); // Assuming 'results' is the array of tasks
+                setTasks(data.results); 
             } catch (err) {
-                console.log(err);
+                // console.log(err);
             }
         };
 

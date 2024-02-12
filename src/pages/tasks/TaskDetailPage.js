@@ -7,9 +7,9 @@ import { toast } from 'react-toastify';
 
 function TaskDetailPage() {
   const { id } = useParams();
-  const history = useHistory(); // To redirect after delete
+  const history = useHistory(); 
   const [task, setTask] = useState(null);
-  const [error, setError] = useState(""); // Optional: manage error state
+  const [error, setError] = useState(""); 
 
   useEffect(() => {
     const fetchTask = async () => {
@@ -17,7 +17,7 @@ function TaskDetailPage() {
         const { data } = await axiosReq.get(`/tasks/${id}`);
         setTask(data);
       } catch (err) {
-        console.log(err);
+        // console.log(err);
         // Handle errors
       }
     };
@@ -31,23 +31,23 @@ function TaskDetailPage() {
           if (confirmDelete) {
             try {
               await axiosReq.delete(`/tasks/${id}`);
-              history.push("/tasks"); // Redirect user to the tasks list after delete
+              history.push("/tasks"); 
               toast.success("Task deleted successfully!");
             } catch (err) {
               console.error(err);
-              setError("Failed to delete the task."); // Optional: Set error state if delete fails
+              setError("Failed to delete the task."); 
               toast.error("Failed to delete the task.");
             }
           } else {
             // User clicked "Cancel", do nothing
-            console.log("Task deletion canceled.");
+            // console.log("Task deletion canceled.");
             toast.success("Task deletion canceled.");
           }
         };
         
 
   if (!task) return <p>Loading...</p>;
-  if (error) return <Alert variant="danger">{error}</Alert>; // Optional: Display error if any
+  if (error) return <Alert variant="danger">{error}</Alert>; 
 
   // Render task details
   return (
