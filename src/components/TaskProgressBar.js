@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import styles from '../styles/HomePage.module.css';
 
 const TaskProgressBar = ({ status }) => {
     // Determine the progress value based on the task status
@@ -19,7 +20,7 @@ const TaskProgressBar = ({ status }) => {
     }
 
     return (
-        <ProgressBar now={progress} label={`${progress}%`} />
+        <ProgressBar className="progress-bar-text" now={progress} label={`${progress}%`} />
     );
 };
 

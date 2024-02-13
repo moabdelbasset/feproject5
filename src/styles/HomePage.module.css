@@ -45,6 +45,18 @@
     background-color: #f2f2f2;
     border-radius: 5px;
     overflow: hidden;
+    position: relative; /* Add this to position your text absolutely within the bar */
+}
+
+.progress-bar-text {
+    position: absolute; /* Position your text over the bar */
+    width: 100%;
+    text-align: center;
+    color: #000000; /* Choose a color that contrasts well with your progress bar color */
+    font-weight: bold; /* Optionally make it bold */
+    line-height: 1; /* Adjust line height to vertically center */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
 }
 
 /* Logged-Out User Styles */
