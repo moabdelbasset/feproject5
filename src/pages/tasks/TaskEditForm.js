@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 
-// import styles from "../../styles/TaskCreateEditForm.module.css";
+import styles from "../../styles/TaskCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 
@@ -195,8 +195,8 @@ function TaskEditForm() {
   return (
     <Form onSubmit={handleSubmit}>
       <Row>
-        <Col md={5} lg={4} className="d-none d-md-block p-0 p-md-2">
-          <Container className={appStyles.Content}>{textFields}</Container>
+        <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
+          <Container className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}>{textFields}</Container>
         </Col>
       </Row>
     </Form>

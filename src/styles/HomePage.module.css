@@ -59,6 +59,21 @@
     transform: translateY(-50%); /* Center vertically */
 }
 
+.progressBarContainer {
+    position: relative;
+}
+
+.progressBarLabel {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #000000; /* Choose a color that contrasts well with your progress bar color */
+    font-weight: bold; /* Optionally make it bold */
+    line-height: 20px; /* This should match your progress bar's height */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* Logged-Out User Styles */
 .welcomeMessage {
     font-size: 2rem;
