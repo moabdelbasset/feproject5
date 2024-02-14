@@ -6,7 +6,7 @@ For details on back-end please visit this link: [BACK-END REPO](https://github.c
 
 ## Table of Contents
 
-- [TaskWave](#Snap-.-it-.-up)
+- [TaskWave](#taskwave)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Project Goals](#project-goals)
@@ -283,7 +283,7 @@ DM Sans was used throughout the website.
 Website has been checked for responsiveness through Development tools. In order to do this, the following steps have been taken:
 
 1. Open browser
-2. Navigate to Snap.it.up at https://feproject5-c5d5d2304ed4.herokuapp.com/
+2. Navigate to TaskWave at https://feproject5-c5d5d2304ed4.herokuapp.com/
 3. Right click anywhere on the page and go to "Inspect" to open Development Tools
 4. Click on drop down menu: "Dimensions: Responsive" and choose "Responsive"
 5. Drag the side of the screen and change screen size, make sure the website looks good from 320px and up. Make sure no side
@@ -457,10 +457,10 @@ When you have fork to a repository you don't have access to files locally on you
 ## Credits
 
 - Code institues learning material for advanced front end which I have used as a base of this project
-- [STAR RATING](https://dev.to/kartikbudhraja/creating-a-dynamic-star-rating-system-in-react-2c8)
+- [React Toastify](https://www.npmjs.com/package/react-toastify)
 - Logo created with [rawpixel](https://www.rawpixel.com/) and [canva](https://www.canva.com/)
 - all images from [pexels](https://www.pexels.com/)
-- [Tom Alumnus](https://code-institute-room.slack.com/team/U02DP5GEYKE) from Slack, for creating ESLINT file with configs.
+- 
 
 ## Acknowledgements
 
