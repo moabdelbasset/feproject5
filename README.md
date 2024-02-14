@@ -275,7 +275,6 @@ Website has been checked for responsiveness through Development tools. In order 
 
 - The following browsers have been used to check responsiveness:
   - Chrome
-  - Microsoft Edge
   - Firefox
 
 
@@ -340,10 +339,16 @@ Each file has been opened in a workspace to check it with ESLINT however I am ge
 | TC-17     | As a user I should be able to edit a task status | Login to the application to go task detail click on edit task | The task should be edited according to your changes | Task was edited | Pass |
 | TC-18     | As a user I should be able to delete an entered task | Login to the application to go task detail click on delete task | The task should be deleted | Task was deleted | Pass | 
 | TC-19     | As a user I should get a warning before deleting a task | Login to the application to go task detail click on delete task | Warning message should appear | Warning message appeared | Pass | 
-| TC-20     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good morning message appeared | Pass |
-| TC-21     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good afternoon message appeared | Pass |
-| TC-22     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good evening message appeared | Pass |
-| TC-23     | As a user I be able to see my tasks progress bar in my home page | Login to the application to go to the home page and check the progress bar | 
+| TC-20     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good morning message will appear | Good morning message appeared | Pass |
+| TC-21     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good afternoon message will appear | Good afternoon message appeared | Pass |
+| TC-22     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good evening message will appear | Good evening message appeared | Pass |
+| TC-23     | As a user I be able to see my tasks progress bar in my home page | Login to the application to go to the home page and check the progress bar if the task status is not done | Progress bar will be 0 | Progress bar is 0 | Pass |
+| TC-24     | As a user I be able to see my tasks progress bar in my home page | Login to the application to go to the home page and check the progress bar if the task status is pending | Progress bar will be 25 | Progress bar is 25 | Pass |
+| TC-25     | As a user I be able to see my tasks progress bar in my home page | Login to the application to go to the home page and check the progress bar if the task status is in progress | Progress bar will be 50 | Progress bar is 50 | Pass |
+| TC-26     | As a user I be able to see my tasks progress bar in my home page | Login to the application to go to the home page and check the progress bar if the task status is  done | Progress bar will be 100 | Progress bar is 100 | Pass |
+| TC-27     | As a user I want to get notified if the task dead line is comming soon | Login to the application and set the task date 2 days from today | a warning message will appear that the task due is soon | warning message appeared | Pass |
+| TC-27     | As a user I want to get notified if the task dead line is passed| Login to the application and set the task date 2 days ago | a warning message will appear that the task due is passed | warning message appeared | Pass |
+| TC-28     | As a user I want to connect to the developer in case if I am facing any issue | Login to the application and go to contact page| Backend should receive the message | Backend recieved the message | Pass |
 
 
 #### Functional Testing
