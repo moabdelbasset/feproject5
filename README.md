@@ -22,8 +22,9 @@ For details on back-end please visit this link: [BACK-END REPO](https://github.c
   - [The Skeleton Plane](#the-skeleton-plane)
     - [Wireframes](#wireframes)
   - [The Surface Plane](#the-surface-plane)
-    - [Design/ Colour-Scheme/ Font/ Images](#design-colour-scheme-font-images)
-- [Technolgies](#technolgies)
+    - [Colour Scheme](#color-scheme)
+    - [Typography](#typography)
+- [Technologies](#technologies)
   - [Tools and Technologies](#tools-and-technologies)
   - [Imports](#imports)
     - [Installed Packages](#installed-packages)
@@ -227,6 +228,18 @@ A 404 page has been implemented and will display if a user navigates to a broken
 - Kaban Board
 - Team Collaboration
 
+## The Surface Plane
+
+### Color Scheme
+
+I opted for a very minimalistic aesthetic and the below 4 colours were chosen. I went for a lighter theme theme with a grey to add some contrast and vibrance to the site. The colours have been implemented across the site and are included in the buttons/links and their hover effects.
+
+![Color Scheme](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707914734/media/images/3500855e-7a49-4a04-96d5-3b1ce57f79a5.png)
+
+### Typography
+
+DM Sans was used throughout the website. 
+
 ## Tools and Technologies
 
 - Node - package manager used to install dependencies
@@ -251,6 +264,7 @@ A 404 page has been implemented and will display if a user navigates to a broken
 - Lighthouse - used to check performance of the page
 
 
+
 ## Testing
 
 ### Responsiveness
@@ -258,7 +272,7 @@ A 404 page has been implemented and will display if a user navigates to a broken
 Website has been checked for responsiveness through Development tools. In order to do this, the following steps have been taken:
 
 1. Open browser
-2. Navigate to Snap.it.up at https://snap-it-up-frontend-0a24e912efd8.herokuapp.com/
+2. Navigate to Snap.it.up at https://feproject5-c5d5d2304ed4.herokuapp.com/
 3. Right click anywhere on the page and go to "Inspect" to open Development Tools
 4. Click on drop down menu: "Dimensions: Responsive" and choose "Responsive"
 5. Drag the side of the screen and change screen size, make sure the website looks good from 320px and up. Make sure no side
