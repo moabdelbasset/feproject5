@@ -9,10 +9,10 @@ const TaskProgressBar = ({ status }) => {
         case 'pending':
             progress = 25;
             break;
-        case 'in_progress':
+        case 'inprogress':
             progress = 50;
             break;
-        case 'completed':
+        case 'done':
             progress = 100;
             break;
         default:
