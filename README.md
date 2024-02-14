@@ -228,6 +228,17 @@ A 404 page has been implemented and will display if a user navigates to a broken
 - Kaban Board
 - Team Collaboration
 
+## The Skeleton Plane
+
+## Wireframes
+
+This is the prototype of the project that may change during its development.
+
+![Wireframe1](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707919745/media/images/0fa2bb58-f629-402f-b072-9feac42175d3.png)
+
+![wireframe2](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707919975/media/images/21b73974-a5d7-4435-b948-332d092f35d9.png)
+
+
 ## The Surface Plane
 
 ### Color Scheme
