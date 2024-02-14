@@ -308,21 +308,43 @@ In order to check HTML code in dynamic website:
 
 No errors were found when passing all CSS files through the official Jigsaw W3 Validator
 
-![css_validator_check](https://res.cloudinary.com/dmod5eglu/image/upload/v1706245588/CSS_VALIDATION_q19x4k.png)
+![css_validator_check](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707898892/media/images/bfdad8d3-2447-49af-b7dc-716a2d0ca5e3.png)
 
 ### JavaScript
 
-Each file has been opened in a workspace to check it with ESLINT however I am getting a warning:
+Each file has been opened in a workspace to check it with ESLINT however I am getting an error that I was not able to fix but I tried other files which all has no errors:
 
-![eslint_warning](https://res.cloudinary.com/dmod5eglu/image/upload/v1706246313/eslint_warning_nuxuyh.png)
+![eslint_warning](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707900238/media/images/9e65649f-d26d-452a-b08f-dd316b8c728e.png)
 
-I was unable to fix it, I tried multiple ways, used createRoot, installed different React version but it seemed to have caused more issues. As it is not an error but a warning I have left it in for now.
-
-All other files show:
-
-![eslint_no_problems](https://res.cloudinary.com/dmod5eglu/image/upload/v1706246311/eslint_no_problems_ubtukt.png)
 
 ### Manual Testing
+
+| Test Case | Description  | Steps    | Excpected Results | Actual Results | Pass/Fail |
+|-----------|--------------|----------|-------------------|----------------|-----------|
+| TC-01     | Home page loads explaining the application purpose for non logged in users | Login to the app | Home page loads explaining the app and give the option to login or sign up | Home page loads explaining the app and give the option to login or sign up | Pass |
+| TC-02     | As a new user I should be able to sign up and create an account | Login to the home page Then click sign up | Sign up page loads and user should add their information | Sign up page loads and user should add their information | Pass |
+| TC-03     | As a user I should able to login from a login page | Go the home page then click on Login | A login page should load and user should be able to login using the username and password created | A login page should load and user should be able to login using the username and password created | Pass |
+| TC-04     | As a logged in user I should view the home page that contains a my task progress | Go the application and Login | The user should be redirected to the home page and see a progress bar representation of his tasks accomplishment || The user should be redirected to the home page and see a progress bar representation of his tasks accomplishment | Pass |
+| TC-05     | As a user if I entered wrong username and password should get an error message | Try to login to your application using wrong name or password | Login will fail | Login failed | Pass |
+| TC-06     | As a user I to be able to view add tasks pages| Login to the application and click Add tasks | The add tasks page should load | The add task page loaded | Pass | 
+| TC-07     | As a user I should be able to add tasks | Login to the application and click Add tasks and start adding a task | The task should be added | The task is added | Pass |
+| TC-08     | Once the task is added I should see a green notification notifying me that the task was added | Add a task | Notification should appear on the right | Notification appeared | Pass | 
+| TC-09     | As a user I should be able to view all the added tasks | Login to the application and go to tasks | All the tasks should appear | All tasks appeared | Pass | 
+| TC-10     | As a user I should be able to view the details of a specific task | Login to the applicaiton and go to tasks and click on View details on one of the tasks | Details of the tasks appeared | Pass | 
+| TC-11     | As a user I should be able to edit a task | Login to the application to go task detail click on edit task | The task should be edited according to your changes | Task was edited | Pass |
+| TC-12     | As a user I want recieve a notfication if the task was edited | Login to the application to go task detail click on edit task | Notifcaiton should appear on the right | Notification appeared | Pass |
+| TC-13     | As a user I should be able to edit a task title | Login to the application to go task detail click on edit task | The task should be edited according to your changes | Task was edited | Pass |
+| TC-14     | As a user I should be able to edit a task description | Login to the application to go task detail click on edit task | The task should be edited according to your changes | Task was edited | Pass |
+| TC-15     | As a user I should be able to edit a task due date| Login to the application to go task detail click on edit task | The task should be edited according to your changes | Task was edited | Pass |
+| TC-16     | As a user I should be able to edit a task priority | Login to the application to go task detail click on edit task | The task should be edited according to your changes | Task was edited | Pass |
+| TC-17     | As a user I should be able to edit a task status | Login to the application to go task detail click on edit task | The task should be edited according to your changes | Task was edited | Pass |
+| TC-18     | As a user I should be able to delete an entered task | Login to the application to go task detail click on delete task | The task should be deleted | Task was deleted | Pass | 
+| TC-19     | As a user I should get a warning before deleting a task | Login to the application to go task detail click on delete task | Warning message should appear | Warning message appeared | Pass | 
+| TC-20     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good morning message appeared | Pass |
+| TC-21     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good afternoon message appeared | Pass |
+| TC-22     | As a logged in user I should a welcome message depends on the time of the day | Login to the application to go to the home page | Good evening message appeared | Pass |
+| TC-23     | As a user I be able to see my tasks progress bar in my home page | Login to the application to go to the home page and check the progress bar | 
+
 
 #### Functional Testing
 
