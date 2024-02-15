@@ -31,19 +31,12 @@ For details on back-end please visit this link: [BACK-END REPO](https://github.c
 - [Testing](#testing)
   - [Responsiveness](#responsiveness)
   - [Accessibility](#accessibility)
-  - [Lighthouse](#lighthouse)
   - [Validator Testing](#validator-testing)
     - [HTML](#html)
     - [CSS](#css)
     - [JavaScript](#javascript)
   - [Manual Testing](#manual-testing)
-    - [Functional Testing](#functional-testing)
-      - [Links and Buttons](#links-and-buttons)
-      - [Negative Testing](#negative-testing)
-  - [Automatic Testing](#automatic-testing)
-    - [Unit Tests](#unit-tests)
-- [Bugs](#bugs)
-  - [Console errors](#console-errors)
+  - [Automated Testing](#automated-testing)
 - [Deployment](#deployment)
   - [Version Control](#version-control)
   - [Deploying in Heroku](#deploying-in-heroku)
@@ -376,7 +369,23 @@ Each file has been opened in a workspace to check it with ESLINT however I am ge
 | TC-28     | As a user I want to connect to the developer in case if I am facing any issue | Login to the application and go to contact page| Backend should receive the message | Backend recieved the message | Pass |
 
 
-#### Functional Testing
+### Automated Testing
+
+Testing the Navigation Bar
+In our application, ensuring a seamless user experience starts with verifying the functionality and responsiveness of our Navigation Bar (NavBar). To achieve this, we've implemented a series of tests using React Testing Library to simulate user interactions and validate the presence of critical elements.
+
+Test Overview:
+1. Rendering Test:
+
+This test confirms that the NavBar renders correctly within our application. It specifically checks for the presence of the "Sign in" link, ensuring that the navigation options are available to users upon initial load.
+2. Logged-In User Experience Test:
+
+To simulate a more dynamic user experience, we test the NavBar's behavior when a user is logged in. This includes verifying that a link to the user's profile is present, signified by the appearance of a "profile" text or avatar. This ensures that logged-in users can easily navigate to their profile page.
+3. Log Out Experience Test:
+
+A crucial aspect of the navigation bar's functionality is allowing users to log out and revert to the initial state of the application. This test clicks on the "Sign out" link and then checks for the re-emergence of the "Sign in" and "Sign up" buttons. This test validates that the application correctly responds to the logout action and provides users with options to sign in or sign up again.
+
+[Automated Testing](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707990462/media/images/55f7ea46-6118-44cc-915c-74d57c4dd9f7.png)
 
 ## Deployment
 
