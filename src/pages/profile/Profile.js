@@ -40,9 +40,9 @@ const Profile = () => {
         const stats = { total: 0, completed: 0, pending: 0, inProgress: 0 };
         fetchedTasks.forEach(task => {
             stats.total++;
-            if (task.status === 'completed') stats.completed++;
+            if (task.status === 'done') stats.completed++;
             else if (task.status === 'pending') stats.pending++;
-            else if (task.status === 'inProgress') stats.inProgress++;
+            else if (task.status === 'inprogress') stats.inProgress++;
         });
         setTaskStats(stats);
     };
