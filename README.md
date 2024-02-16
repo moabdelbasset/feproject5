@@ -385,7 +385,7 @@ To simulate a more dynamic user experience, we test the NavBar's behavior when a
 
 A crucial aspect of the navigation bar's functionality is allowing users to log out and revert to the initial state of the application. This test clicks on the "Sign out" link and then checks for the re-emergence of the "Sign in" and "Sign up" buttons. This test validates that the application correctly responds to the logout action and provides users with options to sign in or sign up again.
 
-[Automated Testing](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707990462/media/images/55f7ea46-6118-44cc-915c-74d57c4dd9f7.png)
+![Automated Testing](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707990462/media/images/55f7ea46-6118-44cc-915c-74d57c4dd9f7.png)
 
 ## Deployment
 
@@ -469,7 +469,7 @@ When you have fork to a repository you don't have access to files locally on you
 - [React Toastify](https://www.npmjs.com/package/react-toastify)
 - Logo created with [rawpixel](https://www.rawpixel.com/) and [canva](https://www.canva.com/)
 - all images from [pexels](https://www.pexels.com/)
-- 
+- Asia Wi: I reviewed the above Project 5 repo for inspiration on README layouts and testing.
 
 ## Acknowledgements
 
