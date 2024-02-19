@@ -469,8 +469,8 @@ When you have fork to a repository you don't have access to files locally on you
 - [React Toastify](https://www.npmjs.com/package/react-toastify)
 - Logo created with [rawpixel](https://www.rawpixel.com/) and [canva](https://www.canva.com/)
 - all images from [pexels](https://www.pexels.com/)
-- Asia Wi: I reviewed the above Project 5 repo for inspiration on README layouts and testing.
+- Asia Wi: I reviewed the above Project 5 repo for inspiration on README layouts and testing
+
 
 ## Acknowledgements
-
-My mentor [Daisy Mc Girr](https://github.com/Daisy-McG) for helping me fix the app when it completely crashed due to incorrect react version installed and all the help throughout the process.
+My mentor [Daisy Mc Girr](https://github.com/Daisy-McG) for helping me during the project. Her insights were really helpfull along all the projects and I learned from her alot.

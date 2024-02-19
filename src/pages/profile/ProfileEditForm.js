@@ -48,7 +48,7 @@ const ProfileEditForm = () => {
       };
       await axios.put(`/profiles/${currentUser?.profile_id}/`, formData, config);
       alert('Profile updated successfully!');
-      history.push(`/prpfiles/${id}`); // Redirect to profile page or wherever appropriate
+      history.push(`/profile/${id}`); // Redirect to profile page or wherever appropriate
     } catch (err) {
       console.error("Error updating profile", err);
     }
