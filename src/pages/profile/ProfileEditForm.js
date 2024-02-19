@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import { useHistory, useParams } from 'react-router-dom';
 import styles from '../../styles/ProfileEditForm.module.css'; // Adjust the path as necessary
+import { toast } from 'react-toastify';
 
 const ProfileEditForm = () => {
   const [image, setImage] = useState(null);
@@ -47,10 +48,12 @@ const ProfileEditForm = () => {
         },
       };
       await axios.put(`/profiles/${currentUser?.profile_id}/`, formData, config);
-      alert('Profile updated successfully!');
+      //alert('Profile updated successfully!');
+      toast.success("Profile image updated successfully!");
       history.push(`/profile/${id}`); // Redirect to profile page or wherever appropriate
     } catch (err) {
-      console.error("Error updating profile", err);
+      toast.error("Failed to perform action.");
+      //console.error("Error updating profile", err);
     }
   };
 
