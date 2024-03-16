@@ -137,8 +137,9 @@ function TaskCreateForm() {
             >
               <option value="">Select Status</option>
               <option value="pending">Pending</option>
-              <option value="in_progress">In Progress</option>
-              <option value="completed">Completed</option>
+              <option value="inprogress">In Progress</option>
+              <option value="done">Done</option>
+              <option value="not_done">Not Done</option>
             </Form.Control>
           </Form.Group>
     
