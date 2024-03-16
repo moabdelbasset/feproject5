@@ -3,7 +3,7 @@
     padding: 20px;
     text-align: center;
     border-top: 1px solid #dadadf;
-    position: fixed;
+    position: sticky;
     z-index: 10;
     left: 0;
     bottom: 0;
@@ -27,7 +27,7 @@
   /* Media query for larger screens - you can adjust the min-width as needed */
 @media (min-width: 768px) { /* This assumes 768px is your breakpoint for larger screens */
   .Footer {
-    position: sticky; /* Fixed position for larger screens */
+    position: fixed; /* Fixed position for larger screens */
     z-index: 10;
   }
 }
