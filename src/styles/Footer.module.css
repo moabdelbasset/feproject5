@@ -3,7 +3,9 @@
     padding: 20px;
     text-align: center;
     border-top: 1px solid #dadadf;
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
+    z-index: 10;
     left: 0;
     bottom: 0;
     width: 100%;
