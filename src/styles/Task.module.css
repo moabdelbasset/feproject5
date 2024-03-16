@@ -22,3 +22,10 @@
   .HeartOutline:hover {
     color: #f85032;
   }
+
+  /* Adjustments for small screens */
+@media (max-width: 768px) {
+  .Content {
+    padding-bottom: 60px; /* Increase bottom padding to ensure space for buttons or footer */
+  }
+}
