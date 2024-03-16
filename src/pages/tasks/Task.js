@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Task = ({ id, title, description, status, priority, created_at, updated_at }) => {
     return (
-      <Card className={styles.Post}>
+      <Card className={styles.Task}>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>
