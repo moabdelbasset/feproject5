@@ -10,3 +10,12 @@
 .Active i {
     color: #2142b2;
 }
+
+
+  /* Media query for larger screens - you can adjust the min-width as needed */
+  @media (min-width: 768px) { /* This assumes 768px is your breakpoint for larger screens */
+    .NavLink {
+        padding: 0px;
+
+    }
+  }
