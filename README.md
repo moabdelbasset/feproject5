@@ -37,6 +37,7 @@ For details on back-end please visit this link: [BACK-END REPO](https://github.c
     - [JavaScript](#javascript)
   - [Manual Testing](#manual-testing)
   - [Automated Testing](#automated-testing)
+  - [Found Bugs](#found-bugs)
 - [Deployment](#deployment)
   - [Version Control](#version-control)
   - [Deploying in Heroku](#deploying-in-heroku)
@@ -386,6 +387,9 @@ To simulate a more dynamic user experience, we test the NavBar's behavior when a
 A crucial aspect of the navigation bar's functionality is allowing users to log out and revert to the initial state of the application. This test clicks on the "Sign out" link and then checks for the re-emergence of the "Sign in" and "Sign up" buttons. This test validates that the application correctly responds to the logout action and provides users with options to sign in or sign up again.
 
 ![Automated Testing](https://res.cloudinary.com/dxiyxikz7/image/upload/v1707990462/media/images/55f7ea46-6118-44cc-915c-74d57c4dd9f7.png)
+
+### Found bugs:
+- When editing a task it's not viewing the current value. I tried many steps but it was failing to view the correct data
 
 ## Deployment
 
